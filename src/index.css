@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+body {
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+@layer base {
+  @font-face {
+    font-family: "Duplicate Sans", "DM Sans", sans-serif;
+    src: url("./components/assets/fonts/DuplicateSans-Bold.woff") format("woff");
+  }
+}
+
+.navbar:hover > div {
+  opacity: 1;
+  pointer-events: unset;
+}
+.app-1 {
+  /* border: 1px solid red; */
+  /* width: 50%; */
+}
+
+.app-2 {
+  /* border: 1px solid blue; */
+  margin-right: -12.375rem;
+  width: 100%;
+}
