@@ -371,7 +371,7 @@ const StyledGrid = styled.div`
     justify-content: center;
     flex-direction: column;
     transform-style: preserve-3d;
-    transform: rotateX(30deg) rotateY(37deg) translate(91px, 88px);
+    transform: rotateX(30deg) rotateY(37deg) translate(91px, 97px);
 
     &.glass {
       background: hsla(0,0%,96.1%,.5);
@@ -389,7 +389,7 @@ const StyledGrid = styled.div`
     &.auth {
       position: relative;
       padding: 1.5rem 1.5rem;
-      transform: rotateX(30deg) rotateY(37deg) translate(10px, 55px);
+      transform: rotateX(30deg) rotateY(37deg) translate(10px, 64px);
       z-index: 2;
 
       .authorization-first {
