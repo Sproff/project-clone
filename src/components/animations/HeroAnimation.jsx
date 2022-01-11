@@ -324,8 +324,8 @@ const StyledGrid = styled.div`
 
   .replayBtn {
     position: absolute;
-    bottom: -13rem;
-    left: 16rem;
+    bottom: -10rem;
+    left: 19rem;
     padding: 0.5rem 1rem;
     font-size: 0.75rem;
     background-color: rgba(245,245,245,1);
