@@ -5,10 +5,10 @@ import LinkedInIcon from "../components/assets/images/linkedin.svg";
 
 export const Footer = () => {
   return (
-    <footer className="bg-black-100 text-white-100 xsm:px-[1.25rem] sm:px-[2.8125rem] md:px-[3.75rem] lg:px-[6.25rem] xl:px-[9.375rem] pt-44 lg:pt-[12.5rem] pb-20 lg:pb-[6.25rem]">
+    <footer className="bg-black-100 text-white-100 xsm:px-[1.25rem] sm:px-[2.8125rem] md:px-[3.75rem] lg:px-[6.25rem] xl:px-[9.375rem] xsm:pt-[5rem] sm:pt-[11rem] lg:pt-[12.5rem] pb-20 lg:pb-[6.25rem]">
       <div>
         <div className="flex flex-col items-center pb-[6.25rem]">
-          <h2 className="mb-[0.9375rem] leading-[1.15] font-Duplicate-Sans font-semibold text-center xsm:text-[1.875rem] sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] xsm:tracking-[-2px] sm:tracking-[-1px]">
+          <h2 className="mb-[0.9375rem] leading-[1.15] font-Duplicate-Sans text-center xsm:text-[1.875rem] sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem]">
             Start building with Mono
           </h2>
           <p className="text-center max-w-[420px] lg:max-w-lg xl:max-w-2xl sm:leading-[1.375] xsm:text-base sm:text-[1.125rem] md:text-[1.25rem] lg:text-[1.375rem] xl:text-[1.625rem]">
@@ -252,7 +252,7 @@ export const Footer = () => {
             <div className="h-3.75 -mt-1 mb-8 md:mb-0">
               <img src={FooterLogo} alt="Footer Logo" />
             </div>
-            <span className="xsm:text-[.875rem] sm:text-base l-10 font-medium">© Mono Technologies Nigeria Limited</span>
+            <span className="xsm:text-[.875rem] sm:text-[.9375rem] md:ml-10 font-medium">© Mono Technologies Nigeria Limited</span>
           </div>
 
           <div className="flex items-center">
@@ -260,7 +260,7 @@ export const Footer = () => {
               target="_blank"
               href="##"
               rel="noreferrer"
-              className="font-medium xsm:text-[.875rem] sm:text-[0.9375rem] text-white-600 hover:text-white-100 flex items-center mr-10 after:absolute after:h-[4px] after:w-[4px] after:rounded-full after:bg-[#8c8fa3] after:left-[90px] first:relative after:top-2/4 after:-translate-y-2/4"
+              className="font-medium xsm:text-[.875rem] sm:text-[0.9375rem] text-white-600 hover:text-white-100 flex items-center mr-10 after:absolute after:h-[4px] after:w-[4px] after:rounded-full after:bg-[#8c8fa3] after:left-[86px] md:after:left-[90px] first:relative after:top-2/4 after:-translate-y-2/4"
             >
               <img src={TwitterIcon} alt="" className="h-[0.875rem] mr-1.5" />
               Twitter

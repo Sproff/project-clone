@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -6,6 +6,7 @@ module.exports = {
     fontFamily: {
       "Duplicate-Sans": ["'Duplicate Sans'", "'DM Sans'", "sans-serif"],
       "DM-Sans": ["DM Sans", "sans-serif"],
+      "DM-Mono": ["DM Mono", "monospace"],
     },
     colors: {
       default: "#fffff",
@@ -17,6 +18,7 @@ module.exports = {
         400: "rgba(96,96,96,1)",
         500: "rgba(245,245,245,1)",
         600: "rgba(181,181,181,1)",
+        700: "rgba(229,229,229,1)",
       },
       black: {
         100: "#000000",
@@ -33,7 +35,7 @@ module.exports = {
       },
     },
     screens: {
-      'xsm': '0px',
+      xsm: "0px",
       ...defaultTheme.screens,
     },
   },

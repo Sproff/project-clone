@@ -3,15 +3,23 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap');
+
 body {
   font-family: "DM Sans", sans-serif;
   overflow-x: hidden;
 }
 
+.codebox {
+  font-family: 'DM Mono', monospace;
+}
+
 @layer base {
   @font-face {
-    font-family: "Duplicate Sans", "DM Sans", sans-serif;
-    src: url("./components/assets/fonts/DuplicateSans-Bold.woff") format("woff");
+    font-family: "Duplicate Sans";
+    src: url("./components/assets/fonts/DuplicateSans-Medium.ttf")
+      format("truetype");
   }
 }
 
@@ -19,13 +27,68 @@ body {
   opacity: 1;
   pointer-events: unset;
 }
-.app-1 {
-  /* border: 1px solid red; */
-  /* width: 50%; */
+
+.toggle-hamburger {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  padding: 7px 6px;
+  position: relative;
+  transition: all 0.3s ease-out;
 }
 
-.app-2 {
-  /* border: 1px solid blue; */
-  margin-right: -12.375rem;
+.toggle-hamburger-main {
+  display: inline-block;
+  height: 2px;
   width: 100%;
+  background: #000;
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+
+.toggle-hamburger-main:after {
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #000;
+  transition: all 0.3s ease-out;
+}
+.toggle-hamburger-main:before {
+  position: absolute;
+  content: "";
+  top: -7px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #000;
+  transition: all 0.3s ease-out;
+}
+
+.hamburger {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+
+#hamburger-box:checked ~ .hamburger {
+  max-height: 5000px;
+  padding-top: 55px;
+  transition: all 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+
+#hamburger-box:checked ~ .toggle-hamburger > .toggle-hamburger-main {
+  background: transparent;
+}
+
+#hamburger-box:checked ~ .toggle-hamburger > .toggle-hamburger-main:before {
+  transform: translate3d(0, 7px, 0) rotate(45deg);
+}
+
+#hamburger-box:checked ~ .toggle-hamburger > .toggle-hamburger-main:after {
+  transform: translate3d(0, -7px, 0) rotate(-45deg);
 }

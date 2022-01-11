@@ -318,7 +318,7 @@ const StyledGrid = styled.div`
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 670px;
+  width: 650px;
   max-width: 100%;
   height: 500px;
 
@@ -375,8 +375,6 @@ const StyledGrid = styled.div`
 
     &.glass {
       background: hsla(0,0%,96.1%,.5);
-      /* border-top: 1px solid rgba(255, 255, 255, 0.5);
-      border-left: 1px solid rgba(255, 255, 255, 0.5); */
       backdrop-filter: blur(40px);
     }
 
